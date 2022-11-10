@@ -29,13 +29,13 @@ function App() {
         id="explore outer"
         className={
           enable()
-            ? "w-[100px] absolute bottom-[380px] h-[100px] rounded-[10rem] transition-all ease-linear flex items-center justify-center bg-[#979797] opacity-50 "
-            : "w-[250px] absolute bottom-[310px] h-[250px] rounded-[10rem] transition-all ease-linear  flex items-center justify-center bg-[#979797] opacity-50 "
+            ? "w-[100px] absolute bottom-[320px] h-[100px] rounded-[10rem] transition-all ease-linear flex items-center justify-center bg-[#979797] opacity-50 "
+            : "w-[250px] absolute bottom-[250px] h-[250px] rounded-[10rem] transition-all ease-linear  flex items-center justify-center bg-[#979797] opacity-50 "
         }
       ></div>
       <div
         id="explore_inner"
-        className="w-[150px] h-[150px] bottom-[360px] absolute rounded-[10rem] flex items-center justify-center  bg-white "
+        className="w-[150px] h-[150px] bottom-[300px] absolute rounded-[10rem] flex items-center justify-center  bg-white "
         onMouseEnter={() => setEnable(!enable())}
         onMouseLeave={() => setEnable(!enable())}
       >
