@@ -1,21 +1,11 @@
 import { createSignal } from "solid-js";
+import Navbar from "./static/Navbar";
 
 function App() {
   const [enable, setEnable] = createSignal(true);
   return (
-    <div className=" w-[376px] mx-auto h-[667px] flex flex-col items-center  bg-[url(./assets/home/background-home-mobile.jpg)]">
-      <div className="flex justify-between w-[90%] m-5">
-        <img
-          className="w-[40px] h-[40px]"
-          src="src/assets/shared/logo.svg"
-          alt=""
-        />
-        <img
-          className="w-[40px] h-[40px]"
-          src="src/assets/shared/icon-hamburger.svg"
-          alt=""
-        />
-      </div>
+    <div className=" w-[413px]  bg-cover mx-auto h-[720px] flex flex-col items-center  bg-[url(./assets/home/background-home-mobile.jpg)]">
+      <Navbar />
       <h1>SO, YOU WANT TO TRAVEL TO</h1>
       <h2 className="text-[80px]">SPACE</h2>
       <h3 className="text-center ">
@@ -29,19 +19,21 @@ function App() {
         id="explore outer"
         className={
           enable()
-            ? "w-[100px] absolute bottom-[320px] h-[100px] rounded-[10rem] transition-all ease-linear flex items-center justify-center bg-[#979797] opacity-50 "
-            : "w-[250px] absolute bottom-[250px] h-[250px] rounded-[10rem] transition-all ease-linear  flex items-center justify-center bg-[#979797] opacity-50 "
+            ? "w-[100px] absolute bottom-[370px] h-[100px] rounded-[10rem] transition-all ease-linear flex items-center justify-center bg-[#979797] opacity-50 "
+            : "w-[250px] absolute bottom-[310px] h-[250px] rounded-[10rem] transition-all ease-linear  flex items-center justify-center bg-[#979797] opacity-50 "
         }
       ></div>
+
       <div
         id="explore_inner"
-        className="w-[150px] h-[150px] bottom-[300px] absolute rounded-[10rem] flex items-center justify-center  bg-white "
+        className="w-[150px] h-[150px] bottom-[360px] absolute rounded-[10rem] flex items-center justify-center  bg-white "
         onMouseEnter={() => setEnable(!enable())}
         onMouseLeave={() => setEnable(!enable())}
       >
-        <p className="text-black text-[20px] select-none ">EXPLORE</p>
+        <a href="/destination/moon">
+          <p className="text-black text-[20px] select-none ">EXPLORE</p>
+        </a>
       </div>
-
     </div>
   );
 }
