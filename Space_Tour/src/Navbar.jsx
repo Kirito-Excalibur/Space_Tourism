@@ -7,14 +7,14 @@ function Navbar() {
     <div className="relative flex justify-between w-[90%] m-5">
       <img
         className="w-[40px] h-[40px]"
-        src="public/assets/shared/logo.svg"
+        src="assets/shared/logo.svg"
         alt=""
       />
 
       <img
         onClick={() => setEnable(!enable())}
         className="relative w-[40px] h-[40px] cursor-pointer"
-        src="public/assets/shared/icon-hamburger.svg"
+        src="assets/shared/icon-hamburger.svg"
         alt=""
       />
 
@@ -28,7 +28,7 @@ function Navbar() {
         <img
           className="w-[40px] h-[40px] mr-5 mt-5 cursor-pointer"
           onClick={() => setEnable(!enable())}
-          src="src/assets/shared/icon-close.svg"
+          src="assets/shared/icon-close.svg"
           alt=""
         />
         <ul className=" w-full pl-10 text-xl flex flex-col gap-3 text-white">
