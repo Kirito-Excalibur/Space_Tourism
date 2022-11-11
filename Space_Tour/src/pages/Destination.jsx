@@ -1,5 +1,4 @@
 import { useParams } from "@solidjs/router";
-import React from "react";
 import Navbar from "../static/Navbar";
 
 function Destination() {
