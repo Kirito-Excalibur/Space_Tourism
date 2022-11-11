@@ -1,5 +1,5 @@
 import { createSignal } from "solid-js";
-import Navbar from "./static/Navbar";
+import Navbar from "./Navbar";
 
 function App() {
   const [enable, setEnable] = createSignal(true);

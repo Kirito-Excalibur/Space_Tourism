@@ -1,11 +1,11 @@
 import { useParams } from "@solidjs/router";
-import Navbar from "../static/Navbar";
+import Navbar from "../Navbar";
 
 function Destination() {
   const params = useParams();
   return (
-    <div className=" w-[413px]  bg-cover mx-auto h-[720px] flex flex-col items-center bg-[url(./assets/destination/background-destination-mobile.jpg)]">
-     <Navbar/>
+    <div className=" w-[413px]  bg-cover mx-auto h-[720px] flex flex-col items-center bg-[url(../public/assets/destination/background-destination-mobile.jpg)]">
+      <Navbar />
       <h1 className="flex tracking-[2.8px] gap-3">
         <span className="text-gray-600">01</span> <p>PICK YOUR DESTINATION</p>
       </h1>

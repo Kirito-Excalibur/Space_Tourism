@@ -7,14 +7,14 @@ function Navbar() {
     <div className="relative flex justify-between w-[90%] m-5">
       <img
         className="w-[40px] h-[40px]"
-        src="src/assets/shared/logo.svg"
+        src="public/assets/shared/logo.svg"
         alt=""
       />
 
       <img
         onClick={() => setEnable(!enable())}
         className="relative w-[40px] h-[40px] cursor-pointer"
-        src="src/assets/shared/icon-hamburger.svg"
+        src="public/assets/shared/icon-hamburger.svg"
         alt=""
       />
 
