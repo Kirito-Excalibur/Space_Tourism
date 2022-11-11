@@ -13,7 +13,8 @@ render(
     <Router>
       <Routes>
         <Route path="/" component={App} />
-        <Route path="/destination/:name" component={Destination} />
+        <Route path="/destination/:name?" component={Destination} />
+        <Route path="/new" element={<p>Life is wierd</p>} />
       </Routes>
     </Router>
   ),
