@@ -5,9 +5,8 @@ import "./index.css";
 
 import { Route, Router, Routes } from "@solidjs/router";
 
-
-import App from "./App"
-import Destination from "./static/Destination"
+import App from "./App";
+import Destination from "./pages/Destination";
 
 render(
   () => (
