@@ -20,7 +20,7 @@ function Destination() {
   createEffect(()=>{
     console.log(val());
     const nikhil = async () => {
-      const resp = await fetch("../src/static/data.json");
+      const resp = await fetch("/data.json");
       const data = await resp.json();
       console.log(data.destinations);
       setName(data.destinations[val()].name);
