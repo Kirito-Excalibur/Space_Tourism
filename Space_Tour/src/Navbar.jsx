@@ -21,8 +21,8 @@ function Navbar() {
       <div
         className={
           enable()
-            ? " z-20 top-0 bg-white mix-blend-multiply  fixed h-full transition-all w-[254px] -right-[270px] flex flex-col  items-end"
-            : "z-20 top-0 bg-gray-600 fixed mix-blend-screen h-full transition-all w-[254px] right-0 flex flex-col  items-end"
+            ? " z-20 top-0 bg-gray-800 bg-blend-multiply  fixed h-full transition-all w-[254px] -right-[270px] flex flex-col  items-end"
+            : "z-20 top-0 bg-gray-800 fixed bg-blend-multiply h-full transition-all w-[254px] right-0 flex flex-col  items-end"
         }
       >
         <img
