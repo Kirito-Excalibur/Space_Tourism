@@ -5,11 +5,7 @@ function Navbar() {
 
   return (
     <div className="relative flex justify-between w-[90%] m-5">
-      <img
-        className="w-[40px] h-[40px]"
-        src="/assets/shared/logo.svg"
-        alt=""
-      />
+      <img className="w-[40px] h-[40px]" src="/assets/shared/logo.svg" alt="" />
 
       <img
         onClick={() => setEnable(!enable())}
@@ -43,11 +39,16 @@ function Navbar() {
             </a>
           </li>
           <li>
-            <a href="/crew">  <h1>02 Crew</h1></a>
-          
+            <a href="/crew">
+ 
+              <h1>02 Crew</h1>
+            </a>
           </li>
           <li>
-            <h1>03 Technology</h1>
+            <a href="/technology">
+     
+              <h1>03 Technology</h1>
+            </a>
           </li>
         </ul>
       </div>

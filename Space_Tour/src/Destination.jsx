@@ -13,9 +13,7 @@ function Destination() {
   
 
 
-  const increase=()=>{
-    setVal(val()+1)
-  }
+ 
 
   createEffect(()=>{
     console.log(val());
