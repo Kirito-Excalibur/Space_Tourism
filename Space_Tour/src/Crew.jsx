@@ -5,8 +5,8 @@ function Crew() {
   const [val, setVal] = createSignal(0);
   const [name, setName] = createSignal("");
   const [image, setImage] = createSignal("");
-  const[role,setRole]=createSignal("");
-  const[bio,setBio]=createSignal("");
+  const [role, setRole] = createSignal("");
+  const [bio, setBio] = createSignal("");
 
   createEffect(() => {
     console.log(val());
@@ -16,8 +16,8 @@ function Crew() {
       console.log(data.crew);
       setName(data.crew[val()].name);
       setImage(data.crew[val()].images.png);
-      setRole(data.crew[val()].role)
-      setBio(data.crew[val()].bio)
+      setRole(data.crew[val()].role);
+      setBio(data.crew[val()].bio);
     };
     nikhil();
   }, [val()]);
@@ -29,12 +29,47 @@ function Crew() {
         <span className="text-gray-600">02</span> <p>MEET YOUR CREW</p>
       </h1>
       <div className="border-gray-500 border-b w-[327px] flex justify-center">
-      <img src={image()} className=" w-[177px] mt-10" alt="" />
+        <img src={image()} className=" w-[177px] h-[222px] mt-10" alt="" />
       </div>
-      
-      <h2 className="text-gray-400">{role().toUpperCase()}</h2>
+
+      <ul className="text-white flex justify-center gap-5 w-full mt-10">
+        <li
+          onClick={() => setVal(0)}
+          className={
+            val() == 0
+              ? "bg-white border w-[10px] h-[10px] rounded-[30rem] "
+              : "bg-gray-700 cursor-pointer border-gray-700 border w-[10px] h-[10px] rounded-[30rem]"
+          }
+        ></li>
+        <li
+          onClick={() => setVal(1)}
+          className={
+            val() == 1
+              ? "bg-white border w-[10px] h-[10px] rounded-[30rem]"
+              : "bg-gray-700 cursor-pointer border-gray-700 border w-[10px] h-[10px] rounded-[30rem]"
+          }
+        ></li>
+        <li
+          onClick={() => setVal(2)}
+          className={
+            val() == 2
+              ? "bg-white border w-[10px] h-[10px] rounded-[30rem]"
+              : "bg-gray-700 cursor-pointer border-gray-700 border w-[10px] h-[10px] rounded-[30rem]"
+          }
+        ></li>
+        <li
+          onClick={() => setVal(3)}
+          className={
+            val() == 3
+              ? "bg-white border w-[10px] h-[10px] rounded-[30rem]"
+              : "bg-gray-700 cursor-pointer border-gray-700 border w-[10px] h-[10px] rounded-[30rem]"
+          }
+        ></li>
+      </ul>
+
+      <h2 className="text-gray-400 mt-10">{role().toUpperCase()}</h2>
       <h2 className="text-[24px]">{name().toUpperCase()}</h2>
-      <h3 className="text-[#D0D6F9] text-center">{bio().toUpperCase()}</h3>
+      <h3 className="text-[#D0D6F9] text-center mt-5">{bio().toUpperCase()}</h3>
     </div>
   );
 }
