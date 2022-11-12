@@ -43,7 +43,7 @@ function Navbar() {
             </a>
           </li>
           <li>
-            <a href="/new">  <h1>02 Crew</h1></a>
+            <a href="/crew">  <h1>02 Crew</h1></a>
           
           </li>
           <li>

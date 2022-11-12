@@ -4,7 +4,7 @@ import Navbar from "./Navbar";
 function App() {
   const [enable, setEnable] = createSignal(true);
   return (
-    <div className=" w-[413px]  bg-cover mx-auto h-[720px] flex flex-col items-center  bg-[url(/assets/home/background-home-mobile.jpg)]">
+    <div className=" w-[413px]  bg-cover mx-auto h-[800px] flex flex-col items-center  bg-[url(/assets/home/background-home-mobile.jpg)]">
       <Navbar />
       <h1>SO, YOU WANT TO TRAVEL TO</h1>
       <h2 className="text-[80px]">SPACE</h2>
@@ -30,7 +30,7 @@ function App() {
         onMouseEnter={() => setEnable(!enable())}
         onMouseLeave={() => setEnable(!enable())}
       >
-        <a href="/destination/moon">
+        <a href="/destination">
           <p className="text-black text-[20px] select-none ">EXPLORE</p>
         </a>
       </div>

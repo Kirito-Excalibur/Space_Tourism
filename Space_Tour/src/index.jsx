@@ -7,14 +7,15 @@ import { Route, Router, Routes } from "@solidjs/router";
 
 import App from "./App";
 import Destination from "./Destination";
+import Crew from "./Crew";
 
 render(
   () => (
     <Router>
       <Routes>
         <Route path="/" component={App} />
-        <Route path="/destination/moon" component={Destination} />
-        <Route path="/new" element={<p>Life is wierd</p>} />
+        <Route path="/destination" component={Destination} />
+        <Route path="/crew" component={Crew} />
       </Routes>
     </Router>
   ),
