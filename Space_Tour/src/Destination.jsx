@@ -48,25 +48,25 @@ function Destination() {
       <ul className="text-white flex justify-center gap-5 w-full mt-5">
         <li
           onClick={() => setVal(0)}
-          className="hover:border-b transition-all  select-none p-1"
+          className={val()==0?"border-b-2 border-white":"hover:border-b-4   cursor-pointer hover:border-gray-500 transition-all  select-none p-1"}
         >
           <h1>MOON</h1>
         </li>
         <li
           onClick={() => setVal(1)}
-          className="hover:border-b transition-all  select-none p-1"
+          className={val()==1?"border-b-2 border-white":"hover:border-b-4 cursor-pointer hover:border-gray-500 transition-all  select-none p-1"}
         >
           <h1>MARS</h1>
         </li>
         <li
           onClick={() => setVal(2)}
-          className="hover:border-b transition-all  select-none p-1"
+          className={val()==2?"border-b-2 border-white":"hover:border-b-4 cursor-pointer hover:border-gray-500 transition-all  select-none p-1"}
         >
           <h1>EUROPA</h1>
         </li>
         <li
           onClick={() => setVal(3)}
-          className="hover:border-b transition-all  select-none p-1"
+          className={val()==3?"border-b-2 border-white":"hover:border-b-4 cursor-pointer hover:border-gray-500 transition-all  select-none p-1"}
         >
           <h1>TITAN</h1>
         </li>
