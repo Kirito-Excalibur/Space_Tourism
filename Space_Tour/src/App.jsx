@@ -3,9 +3,10 @@ import Navbar from "./Navbar";
 
 function App() {
   const [enable, setEnable] = createSignal(true);
+  const[active,setActive]=createSignal(0)
   return (
     <div className=" w-[413px]  bg-cover mx-auto h-[800px] flex flex-col  items-center  bg-[url(/assets/home/background-home-mobile.jpg)] sm:w-full sm:bg-[url(/assets/home/background-home-desktop.jpg)] sm:h-[936.5px]">
-      <Navbar />
+      <Navbar active={active()}/>
 
       <div className="sm:absolute sm:left-[10%] sm:top-[40%]">
         <h1 className="sm:text-[28px] text-center sm:text-left">SO, YOU WANT TO TRAVEL TO</h1>

@@ -7,7 +7,7 @@ function Crew() {
   const [image, setImage] = createSignal("");
   const [role, setRole] = createSignal("");
   const [bio, setBio] = createSignal("");
-
+  const[active,setActive]=createSignal(2)
   createEffect(() => {
     console.log(val());
     const nikhil = async () => {

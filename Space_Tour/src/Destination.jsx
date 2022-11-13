@@ -9,7 +9,7 @@ function Destination() {
   const [desc, setDesc] = createSignal("");
   const [distance, setDistance] = createSignal("");
   const [travel, setTravel] = createSignal("");
-
+  const[active,setActive]=createSignal(1)
   
 
 

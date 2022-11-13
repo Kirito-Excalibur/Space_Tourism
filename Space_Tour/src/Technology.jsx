@@ -6,7 +6,7 @@ function technology() {
   const [name, setName] = createSignal("");
   const [image, setImage] = createSignal("");
   const [desc, setDesc] = createSignal("");
-
+  const[active,setActive]=createSignal(3)
   createEffect(() => {
     console.log(val());
     const nikhil = async () => {
