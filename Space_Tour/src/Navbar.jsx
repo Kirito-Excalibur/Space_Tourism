@@ -4,7 +4,7 @@ function Navbar({active}) {
   const [enable, setEnable] = createSignal(true);
 
   return (
-    <div className="relative flex justify-between w-[90%] m-5">
+    <div className="relative  sm:mt-12 flex justify-between w-[90%] m-5">
       <img className="w-[40px] h-[40px]" src="/assets/shared/logo.svg" alt="" />
 
       <img

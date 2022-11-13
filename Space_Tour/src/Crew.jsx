@@ -24,7 +24,7 @@ function Crew() {
 
   return (
     <div className=" w-[413px] select-none  bg-cover mx-auto h-[800px] flex flex-col items-center bg-[url(/assets/crew/background-crew-mobile.jpg)]">
-      <Navbar />
+      <Navbar active={active()}/>
       <h1 className="flex tracking-[2.8px] gap-3">
         <span className="text-gray-600">02</span> <p>MEET YOUR CREW</p>
       </h1>

@@ -22,7 +22,7 @@ function technology() {
 
   return (
     <div className=" w-[413px] select-none  bg-cover mx-auto h-[800px] flex flex-col items-center bg-[url(/assets/technology/background-technology-mobile.jpg)]">
-      <Navbar />
+      <Navbar active={active()}/>
       <h1 className="flex tracking-[2.8px] gap-3">
         <span className="text-gray-600">03</span>
         <p>SPACE LAUNCH 101</p>
