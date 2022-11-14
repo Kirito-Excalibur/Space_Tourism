@@ -30,7 +30,7 @@ function App() {
 
       <div
         id="explore_inner"
-        className="w-[150px] sm:right-[10%] h-[150px] sm:h-[274px] sm:w-[274px] top-[46vh] absolute rounded-[10rem] flex items-center justify-center  bg-white "
+        className="w-[150px] sm:right-[10%] h-[150px] sm:h-[274px] sm:w-[274px] top-[47vh] absolute rounded-[10rem] flex items-center justify-center  bg-white "
         onMouseEnter={() => setEnable(!enable())}
         onMouseLeave={() => setEnable(!enable())}
       >
